@@ -92,16 +92,15 @@
 
     <!-- Header Section -->
     <header class="bg-medium-purple shadow-lg py-2 px-6 md:px-12 sticky-header">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
+        <div class="max-w-7xl mx-auto flex flex-row justify-between items-center">
             <h1 class="text-lg md:text-xl font-extrabold text-white flex flex-row items-center gap-4 md:mb-0">
                 <img src="logo-tonbridge-pickleball-badge.svg" alt="Tonbridge Pickleball Club Logo Badge" width="51px" />
-                <a href="#top">Tonbridge Pickleball Club</a>
+                <a href="#top" class="invisible md:visible w-1 md:w-auto">Tonbridge Pickleball Club</a>
             </h1>
             <nav>
                 <ul class="flex space-x-4 md:space-x-8">
                     <li><a href="#about" class="text-md font-bold text-accent-yellow hover:text-yellow-400 transition duration-300">About us</a></li>
                     <li><a href="#sessions" class="text-md font-bold text-accent-yellow hover:text-yellow-400 transition duration-300">Sessions</a></li>
-                    <li><a href="#faq" class="text-md font-bold text-accent-yellow hover:text-yellow-400 transition duration-300">FAQ</a></li>
                     <li><a href="#contact" class="text-md font-bold text-accent-yellow hover:text-yellow-400 transition duration-300">Contact</a></li>
                 </ul>
             </nav>
@@ -140,12 +139,13 @@
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="pt-12 md:pt-24 mt-8 max-w-7xl mx-auto">
-        <div class="max-w-5xl mx-auto">
+    <section id="about" class="pt-32 px-6 mt-8 max-w-7xl mx-auto">
+        <div class="max-w-7xl mx-auto">
             <h3 class="text-3xl md:text-4xl font-bold text-white mb-8 text-center">About our club</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-lg leading-relaxed">
                 <div class="bg-medium-purple p-8 md:p-12 rounded-lg shadow-md">
                     <h4 class="text-2xl font-semibold text-white mb-4">Community & fun</h4>
+                    <img src="photo-collage-tpc-1.jpg" alt="Members of Tonbridge Pickleball Club  playing Pickleball" width="100%" class="mb-6 rounded-md" />
                     <p class="mb-4">
                         Tonbridge Pickleball Club is all about bringing people together for a great time. We're a social, fun, and incredibly welcoming group for anyone who loves or wants to learn pickleball.
                     </p>
@@ -155,6 +155,7 @@
                 </div>
                 <div class="bg-medium-purple p-8 md:p-12 rounded-lg shadow-md">
                     <h4 class="text-2xl font-semibold text-white mb-4">Play & progress</h4>
+                    <img src="photo-collage-tpc-2.jpg" alt="Members of Tonbridge Pickleball Club  playing Pickleball" width="100%" class="mb-6 rounded-md" />
                     <p class="mb-4">
                         While we love our social sessions, we also offer competitive opportunities. We actively pursue matches with neighboring clubs and participate in competitions across the UK.
                     </p>
@@ -167,26 +168,34 @@
     </section>
 
     <!-- Sessions Section -->
-    <section id="sessions" class="py-16 md:py-24 px-6 text-white rounded-xl mt-8 max-w-7xl mx-auto">
-        <div class="max-w-5xl mx-auto">
-            <h3 class="text-3xl md:text-4xl font-bold text-center text-white mb-8">Our sessions</h3>
+    <section id="sessions" class="pt-32 px-6 text-white rounded-xl mt-8 max-w-7xl mx-auto">
+        <div class="max-w-7xl mx-auto">
+            
             <div class="bg-medium-purple text-white p-8 md:p-12 rounded-lg shadow-2xl">
-                <p class="text-xl md:text-2xl font-semibold mb-4">
-                    Join us every <span class="text-white">Thursday evening</span>!
-                </p>
-                <p class="text-lg md:text-xl mb-6">
-                    <span class="font-bold">Time:</span> <br/>7:30 PM - 9:00 PM
-                </p>
-                <p class="text-lg md:text-xl mb-6">
-                    <span class="font-bold">Venue:</span> <br/>Weald of Kent Grammar School, Tudeley Lane, Tonbridge, TN9 2JP
-                </p>
+                <h3 class="text-3xl md:text-4xl font-bold text-white mb-8 text-center">Our sessions</h3>
+                <div class="md:flex md:flex-row items-center gap-8 mb-6">
+                    <div class="md:max-w-md">
+                        <img src="photo-weald-school-sports-hall.jpg" width="100%" alt="Weald School Sports Hall" class="rounded-lg" />
+                    </div>
+                    <div>
+                        <p class="text-lg md:text-xl mb-6">
+                            <span class="font-bold">Date:</span> <br/>Every Thursday evening
+                        </p>
+                        <p class="text-lg md:text-xl mb-6">
+                            <span class="font-bold">Time:</span> <br/>7:30 PM - 9:00 PM
+                        </p>
+                        <p class="text-lg md:text-xl mb-6">
+                            <span class="font-bold">Venue:</span> <br/>Weald of Kent Grammar School, Tudeley Lane, Tonbridge, TN9 2JP
+                        </p>
+                    </div>
+                </div>
                 <p class="text-lg md:text-xl mb-6">
                     <span class="font-bold">Playing time:</span> <br/>
                     We have access to <span class="font-bold text-white">three courts</span>, allowing for up to 16 people. We normally play king of the court and rotate games every 12 mins.
                 </p>
                 <p class="text-lg md:text-xl mb-8">
                     <span class="font-bold">Costs:</span> <br/>
-                    Joining the club is <span class="font-bold text-white">free</span>! Members join our WhatsApp group for keeping in touch and pay upfront around £5-6 on Spond <span class="font-bold">for 1.5 hours of play</span>.
+                    Joining the club is <span class="font-bold text-white">free</span>! Members join our WhatsApp group (for keeping in touch), then register and pay upfront (around £5-6) on Spond <span class="font-bold">for 1.5 hours of play</span>.
                 </p>
                 <a href="#contact" class="bg-accent-yellow text-dark-purple hover:bg-yellow-400 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
                     Get in touch to join!
@@ -196,9 +205,9 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="py-16 md:py-24 px-6 mt-8 max-w-7xl mx-auto">
-        <div class="max-w-5xl mx-auto text-center">
-            <h3 class="text-3xl md:text-4xl font-bold text-white mb-12">What our members say</h3>
+    <section class="pt-32 px-6 mt-8 max-w-7xl mx-auto">
+        <div class="max-w-7xl mx-auto">
+            <h3 class="text-3xl md:text-4xl font-bold text-white mb-12 text-center">What our members say</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <!-- Testimonial 1 -->
                 <div class="bg-medium-purple p-6 rounded-lg shadow-md">
@@ -210,16 +219,30 @@
                 <!-- Testimonial 2 -->
                 <div class="bg-medium-purple p-6 rounded-lg shadow-md">
                     <p class="italic text-white mb-4">
-                        "Great fun and a good workout! The Weald School venue is perfect with its great lighting and plenty of space for everyone to play."
+                        "I love playing events and feel so proud representing Tonbridge now that we've got our new kits!"
+                    </p>
+                    <p class="font-semibold text-white">- Adi VA</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-medium-purple p-6 rounded-lg shadow-md">
+                    <p class="italic text-white mb-4">
+                        "Really loving the king of the court games we play as everyone gets to mix in and play each other."
                     </p>
                     <p class="font-semibold text-white">- Pete B</p>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="bg-medium-purple p-6 rounded-lg shadow-md">
+                    <p class="italic text-white mb-4">
+                        "Great fun and a good workout! The Weald School venue is perfect with its great lighting and plenty of space for everyone to play."
+                    </p>
+                    <p class="font-semibold text-white">- Jacqui G</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="py-16 md:py-24 px-6 text-white mt-8 max-w-7xl mx-auto">
+    <section id="faq" class="pt-32 px-6 text-white mt-8 max-w-7xl mx-auto">
         <div class="max-w-3xl mx-auto text-center">
             <h3 class="text-3xl md:text-4xl font-bold text-white mb-8">Frequently asked questions</h3>
             <div class="text-left">
@@ -238,7 +261,7 @@
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </div>
                 <div class="faq-answer">
-                    <p>Our venue is Leigh Academy School Sports Hall, Brook St, Tonbridge, TN9 2PH.</p>
+                    <p>Our venue is Weald of Kent Grammar School, Tudeley Lane, Tonbridge, TN9 2JP.</p>
                 </div>
 
                 <!-- FAQ Item 3 -->
@@ -247,7 +270,7 @@
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </div>
                 <div class="faq-answer">
-                    <p>We have access to four courts, allowing for up to 20 participants and ensuring ample court time for everyone.</p>
+                    <p>We have access to three courts, allowing for up to 16 participants and ensuring ample court time for everyone.</p>
                 </div>
 
                 <!-- FAQ Item 4 -->
@@ -272,8 +295,8 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 md:py-24 px-6 bg-medium-purple text-white rounded-xl shadow-lg mt-8 mb-8 max-w-7xl mx-auto">
-        <div class="max-w-3xl mx-auto text-center">
+    <section id="contact" class="pt-32 px-6 mb-8 max-w-7xl mx-auto">
+        <div class="py-16 md:py-24 px-12 bg-medium-purple text-white rounded-xl shadow-lg mx-auto text-center">
             <h3 class="text-3xl md:text-4xl font-bold text-white mb-8">Get in touch</h3>
             <p class="text-lg md:text-xl mb-8">
                 Have questions or ready to join the fun? Contact Oli for more information!
