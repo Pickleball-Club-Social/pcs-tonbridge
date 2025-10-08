@@ -150,14 +150,14 @@
                         Tonbridge Pickleball Club is all about bringing people together for a great time. We're a social, fun, and incredibly welcoming group for anyone who loves or wants to learn pickleball.
                     </p>
                     <p>
-                        Our social evenings are packed with fun games and drills designed to help you meet new people, learn new skills, and most importantly, enjoy the game!
+                        Our club evenings are a mix of coach-led drills (Oli is Pickleball England qualified) and games, designed to help you learn new pickleball skills and strategies, but most importantly, enjoy the game!
                     </p>
                 </div>
                 <div class="bg-medium-purple p-8 md:p-12 rounded-lg shadow-md">
                     <h4 class="text-2xl font-semibold text-white mb-4">Play & progress</h4>
                     <img src="photo-collage-tpc-2.jpg" alt="Members of Tonbridge Pickleball Club  playing Pickleball" width="100%" class="mb-6 rounded-md" />
                     <p class="mb-4">
-                        While we love our social sessions, we also offer competitive opportunities. We actively pursue matches with neighboring clubs and participate in competitions across the UK.
+                        While we love our club sessions, we also offer competitive opportunities. We currently have three teams within the <a class="underline hover:no-underline" href="https://www.pickleballengland.org/kespl/">Kent and Sussex Pickleball league</a> and actively pursue matches with neighboring clubs.
                     </p>
                     <p>
                         Whether you're looking to stay active, keep fit, or master the sport, our club provides a fantastic environment for both doubles and occasional singles play. We welcome individuals of all ages, sexes, and backgrounds.
@@ -182,20 +182,20 @@
                             <span class="font-bold">Date:</span> <br/>Every Thursday evening
                         </p>
                         <p class="text-lg md:text-xl mb-6">
-                            <span class="font-bold">Time:</span> <br/>7:30 PM - 9:00 PM
+                            <span class="font-bold">Time:</span> <br/>7:00 PM - 9:00 PM
                         </p>
                         <p class="text-lg md:text-xl mb-6">
-                            <span class="font-bold">Venue:</span> <br/>Weald of Kent Grammar School, Tudeley Lane, Tonbridge, TN9 2JP
+                            <span class="font-bold">Venue:</span> <br/>Tunbridge Wells Sports Centre, 210 St John's Rd, Tunbridge Wells TN4 9TX
                         </p>
                     </div>
                 </div>
                 <p class="text-lg md:text-xl mb-6">
                     <span class="font-bold">Playing time:</span> <br/>
-                    We have access to <span class="font-bold text-white">three courts</span>, allowing for up to 16 people. We normally play king of the court and rotate games every 12 mins.
+                    We have access to <span class="font-bold text-white">four dedicated pickleball courts</span>, allowing for up to 16-20 people. We normally have two courts for drills and coaching and two courts play king of the court and rotate games every 10 mins. Then we all come together for social games of doubles.
                 </p>
                 <p class="text-lg md:text-xl mb-8">
                     <span class="font-bold">Costs:</span> <br/>
-                    Joining the club is <span class="font-bold text-white">free</span>! Members join our WhatsApp group (for keeping in touch), then register and pay upfront (around £5-6) on Spond <span class="font-bold">for 1.5 hours of play</span>.
+                    Joining the club is <span class="font-bold text-white">free</span>! Members join our WhatsApp group (for keeping in touch), then register and pay upfront (£7-10) on Spond <span class="font-bold">for 2 hours of play</span>.
                 </p>
                 <a href="#contact" class="bg-accent-yellow text-dark-purple hover:bg-yellow-400 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:scale-105">
                     Get in touch to join!
@@ -252,7 +252,7 @@
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </div>
                 <div class="faq-answer">
-                    <p>We play every Thursday evening from 7:30 PM to 9:00 PM.</p>
+                    <p>We play every Thursday evening from 7 to 9 PM.</p>
                 </div>
 
                 <!-- FAQ Item 2 -->
@@ -261,7 +261,7 @@
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </div>
                 <div class="faq-answer">
-                    <p>Our venue is Weald of Kent Grammar School, Tudeley Lane, Tonbridge, TN9 2JP.</p>
+                    <p>Our venue is Tunbridge Wells Sports Centre, 210 St John's Rd, Tunbridge Wells TN4 9TX.</p>
                 </div>
 
                 <!-- FAQ Item 3 -->
@@ -270,7 +270,7 @@
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </div>
                 <div class="faq-answer">
-                    <p>We have access to three courts, allowing for up to 16 participants and ensuring ample court time for everyone.</p>
+                    <p>We have access to four dedicated pickleball courts, allowing for 16-20 participants and ensuring ample court time for everyone.</p>
                 </div>
 
                 <!-- FAQ Item 4 -->
@@ -374,61 +374,6 @@
                 question.addEventListener('click', () => {
                     question.classList.toggle('active');
                 });
-            });
-
-            // Gemini API Tip Generator
-            const generateTipBtn = document.getElementById('generateTipBtn');
-            const tipOutput = document.getElementById('tipOutput');
-            const loadingSpinner = document.getElementById('loadingSpinner');
-            const buttonText = document.getElementById('buttonText');
-            const errorMessage = document.getElementById('errorMessage');
-
-            generateTipBtn.addEventListener('click', async () => {
-                tipOutput.classList.add('hidden'); // Hide previous tip
-                errorMessage.classList.add('hidden'); // Hide previous errors
-                buttonText.textContent = 'Generating...';
-                loadingSpinner.classList.remove('hidden');
-                generateTipBtn.disabled = true; // Disable button during loading
-
-                try {
-                    let chatHistory = [];
-                    const prompt = "Give me a concise and helpful tip for playing pickleball. Focus on strategy or technique. Do not include any introductory or concluding phrases like 'Here's a tip' or 'Hope this helps'. Just the tip itself.";
-                    chatHistory.push({ role: "user", parts: [{ text: prompt }] });
-                    const payload = { contents: chatHistory };
-                    const apiKey = ""; // Canvas will automatically provide the API key
-                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
-
-                    const response = await fetch(apiUrl, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(payload)
-                    });
-
-                    if (!response.ok) {
-                        const errorData = await response.json();
-                        throw new Error(`API error: ${response.status} - ${errorData.error.message || 'Unknown error'}`);
-                    }
-
-                    const result = await response.json();
-
-                    if (result.candidates && result.candidates.length > 0 &&
-                        result.candidates[0].content && result.candidates[0].content.parts &&
-                        result.candidates[0].content.parts.length > 0) {
-                        const text = result.candidates[0].content.parts[0].text;
-                        tipOutput.textContent = text;
-                        tipOutput.classList.remove('hidden');
-                    } else {
-                        throw new Error("Unexpected API response structure or no content found.");
-                    }
-                } catch (error) {
-                    console.error("Error generating pickleball tip:", error);
-                    errorMessage.textContent = `Failed to generate tip: ${error.message}. Please try again.`;
-                    errorMessage.classList.remove('hidden');
-                } finally {
-                    buttonText.textContent = 'Generate tip';
-                    loadingSpinner.classList.add('hidden');
-                    generateTipBtn.disabled = false; // Re-enable button
-                }
             });
         });
     </script>
